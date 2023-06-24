@@ -558,16 +558,12 @@ img {
     fill: currentColor;
 }
 
-.footer-logo-container {
-    margin-right: 120px;
-}
 
 
 .footer .container {
     display: flex;
     gap: 120px;
     align-items: baseline;
-    margin-right: 120px;
 }
 
 .footer .staff-link-list {
@@ -665,12 +661,8 @@ textarea {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
+    color: var(--main-title-color);
     margin-bottom: 16px;
-}
-
-.form {
-
 }
 
 .form .checkbox:checked +
@@ -691,7 +683,7 @@ textarea {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--main-text-color);
+    color: #8e8f99;
     margin-bottom: 4px;
 }
 
@@ -707,6 +699,7 @@ textarea {
     outline: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    transition: border-color var(--time) var(--time-func);
 }
 
 .form-input:focus {
@@ -723,6 +716,7 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
     fill: var(--main-text-color);
+    transition: fill var(--time) var(--time-func);
 }
 
 .comment-container {
@@ -807,4 +801,70 @@ textarea {
     background-color: #404BBF;
 }
 
+
+
+
+.subscribe-label {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    color: var(--white);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    transition: border-color var(--time) var(--time-func);
+}
+
+.footer-input:focus-within {
+    border-color: var(--button-default-background);
+}
+
+.footer-input::placeholder {
+    color: var(--white);
+}
+
+
+.subscribe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
+    height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    transition: background-color var(--time) var(--time-func);
+}
+
+.subscribe-button:is(:hover, :focus) {
+    background-color: #404BBF;
+}
+
+.subscribe-button-icon {
+    margin-left: 16px;
+}
 
