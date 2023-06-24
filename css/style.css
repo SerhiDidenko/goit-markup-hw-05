@@ -779,8 +779,7 @@ textarea {
     border-radius: 2px;
     margin-right: 8px;
     fill: transparent;
-    transition: background-color var(--time) var(--time-func),
-    border var(--time) var(--time-func);
+    transition: fill var(--time) var(--time-func), background-color var(--time) var(--time-func), border var(--time) var(--time-func);
 }
 
 .form .checkbox:checked + .policy-label .custom-checkbox {
