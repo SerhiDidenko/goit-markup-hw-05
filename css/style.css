@@ -558,8 +558,6 @@ img {
     fill: currentColor;
 }
 
-
-
 .footer .container {
     display: flex;
     gap: 120px;
@@ -766,7 +764,7 @@ textarea {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: var(--slate-color);
+    color: #8e8f99;
 }
 
 .custom-checkbox {
@@ -777,9 +775,17 @@ textarea {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
+    border-radius: 2px;
     margin-right: 8px;
     fill: transparent;
+    transition: background-color var(--time) var(--time-func),
+    border var(--time) var(--time-func);
+}
+
+.form .checkbox:checked + .policy-label .custom-checkbox {
+    fill: #F4F4FD;
+    background-color: #404bbf;
+    border: none;
 }
 
 .policy-link {
@@ -801,14 +807,12 @@ textarea {
     line-height: 1.5;
     letter-spacing: 0.04em;
     font-weight: 500;
+    transition: background-color var(--time) var(--time-func)
 }
 
 .submit-btn:is(:hover, :focus) {
     background-color: #404BBF;
 }
-
-
-
 
 .subscribe-label {
     margin-bottom: 16px;
@@ -846,7 +850,6 @@ textarea {
 .footer-input::placeholder {
     color: var(--white);
 }
-
 
 .subscribe-button {
     display: flex;
