@@ -740,6 +740,7 @@ textarea {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+    transition: border-color var(--time) var(--time-func);
 }
 
 .form-textarea::placeholder {
