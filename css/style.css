@@ -672,9 +672,15 @@ textarea {
     fill: var(--filter-btn-hov-color);
 }
 
-.form-container, 
-.input-container {
+.form-container {
     margin-bottom: 8px;
+}
+.comment-container {
+    margin-bottom: 16px;
+}
+
+.input-box {
+    position: relative;
 }
 
 
